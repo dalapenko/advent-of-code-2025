@@ -2,13 +2,13 @@ package org.example
 
 import org.example.core.Puzzle
 import org.example.core.Utils
-import org.example.solution.Puzzle1
+import org.example.solution.Puzzle2
 
 fun main() {
-    val puzzle = Puzzle1.let(::PuzzlePrinter)
+    val puzzle = Puzzle2.let(::PuzzlePrinter)
 
-    puzzle.printFirstPartAnswer() // 1141
-    puzzle.printSecondPartAnswer() // ?
+    puzzle.printFirstPartAnswer()
+    puzzle.printSecondPartAnswer()
 }
 
 private class PuzzlePrinter(private val puzzle: Puzzle) {
