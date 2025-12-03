@@ -7,8 +7,8 @@ import org.example.solution.Puzzle1
 fun main() {
     val puzzle = Puzzle1.let(::PuzzlePrinter)
 
-    puzzle.printFirstPuzzleAnswer()
-    puzzle.printSecondPuzzleAnswer()
+    puzzle.printFirstPartAnswer() // 1141
+    puzzle.printSecondPartAnswer() // ?
 }
 
 private class PuzzlePrinter(private val puzzle: Puzzle) {
@@ -17,11 +17,11 @@ private class PuzzlePrinter(private val puzzle: Puzzle) {
         Utils.readLinesFromResources(puzzle.inputFileName)
     }
 
-    fun printFirstPuzzleAnswer() {
-        println(puzzle.firstPuzzleSolution(puzzleInputData))
+    fun printFirstPartAnswer() {
+        println(puzzle.firstPartSolution(puzzleInputData))
     }
 
-    fun printSecondPuzzleAnswer() {
-        println(puzzle.secondPuzzleSolution(puzzleInputData))
+    fun printSecondPartAnswer() {
+        println(puzzle.secondPartSolution(puzzleInputData))
     }
 }
