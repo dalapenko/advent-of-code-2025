@@ -62,7 +62,7 @@ private fun String.toLongRange(): LongRange {
 }
 
 private fun Long.digitCount(): Int {
-    return when(this) {
+    return when (this) {
         0L -> 1
         else -> log10(abs(toDouble())).toInt() + 1
     }

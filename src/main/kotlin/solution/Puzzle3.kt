@@ -36,7 +36,7 @@ object Puzzle3 : Puzzle {
 
                     var (maxDigitIndex, maxDigit) = windowStartIndex to bank[windowStartIndex]
 
-                    for (index in windowStartIndex + 1 .. windowEndIndex) {
+                    for (index in windowStartIndex + 1..windowEndIndex) {
                         val digitAtIndex = bank[index]
 
                         if (digitAtIndex > maxDigit) {
