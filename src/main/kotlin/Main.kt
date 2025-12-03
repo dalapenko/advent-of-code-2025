@@ -2,10 +2,10 @@ package org.example
 
 import org.example.core.Puzzle
 import org.example.core.Utils
-import org.example.solution.Puzzle2
+import org.example.solution.Puzzle3
 
 fun main() {
-    val puzzle = Puzzle2.let(::PuzzlePrinter)
+    val puzzle = Puzzle3.let(::PuzzlePrinter)
 
     puzzle.printFirstPartAnswer()
     puzzle.printSecondPartAnswer()
