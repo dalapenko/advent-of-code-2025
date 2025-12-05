@@ -82,7 +82,7 @@ private fun nearestPoint(y: Int, x: Int): Array<Point> {
     )
 }
 
-data class Point(val y: Int, val x: Int)
+private data class Point(val y: Int, val x: Int)
 
 private fun List<String>.toRollMap(): Array<IntArray> {
     return Array(size) { y ->
@@ -93,7 +93,6 @@ private fun List<String>.toRollMap(): Array<IntArray> {
 }
 
 private const val PAPER_ROLL_CHAR = '@'
-private const val DOT_CHAR = '.'
 
 private const val PAPER_ROLL_DIGIT = 1
 private const val DOT_DIGIT = 0
